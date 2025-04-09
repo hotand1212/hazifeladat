@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Űrlap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/output.css" />
+  </head>
+  <body
+    class="relative bg-cover bg-[url(../assets/gallery/pexels-pixabay-159862.jpg)]"
+  >
+    <header
+      class="select-none absolute glassmorphism left-0 top-0 flex flex-col items-center justify-center p-4 w-full text-white"
+    >
+      <nav class="w-full">
+        <ul class="flex flex-row justify-end p-2 gap-4 font-bold font-cinzel">
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="../index.html">Főoldal</a>
+          </li>
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="./animation.html">Animáció</a>
+          </li>
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="./form.html">Űrlap</a>
+          </li>
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="./table.html">Táblázat</a>
+          </li>
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="./media.html">Videó</a>
+          </li>
+          <li class="hover:scale-[1.1] transition">
+            <a class="underlinehover" href="./gallery.html">Galéria</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex items-center justify-center h-[100vh] text-white">
+      <section
+        class="glassmorphism rounded-2xl w-[500px] h-[500px] flex items-center justify-center flex-col text-black"
+      >
+        <div class="text-white font-cinzel text-2xl font-bold">
+          Keress Híres Görög Embereket
+        </div>
+        <div
+          class="bg-white flex p-5 flex-col w-[70%] justify-around items-center rounded-2xl"
+        >
+          <div class="flex flex-col items-center w-[90%]">
+            <label for="eszkoz" class="self-start text-gray-500"
+              >Ókori Görög Varosok:</label
+            >
+            <select id="eszkoz" class="p-3">
+              <option>Abdéra</option>
+              <option>Actium</option>
+              <option>Agrigento régészeti lelőhelyei</option>
+              <option>Aigina (település)</option>
+              <option>Aigina (város)</option>
+              <option>Aigion</option>
+              <option>Ajía Triáda</option>
+              <option>Akhilleion (Troász)</option>
+              <option>Amantia</option>
+              <option>Amphipolisz</option>
+              <option>Antigoneia (Épeirosz)</option>
+              <option>Antipatreia</option>
+              <option>Athén története</option>
+              <option>Aulón (Illíria)</option>
+            </select>
+          </div>
+          <div class="flex flex-col items-center w-[90%]">
+            <label for="honnan" class="self-start text-gray-500">Nem?</label>
+            <select id="honnan" class="p-3">
+              <option>Férfi</option>
+              <option>Nő</option>
+            </select>
+          </div>
+          <div class="flex flex-col items-center w-[90%]">
+            <label for="hova" class="self-start text-gray-500">Rang?</label>
+            <select id="hova" class="p-3">
+              <option>Arkhón</option>
+              <option>Autokratór</option>
+              <option>Baszileusz</option>
+              <option>Boiótarkhosz</option>
+              <option>Despota</option>
+              <option>Ephorosz (tisztség)</option>
+              <option>Nomarkhész</option>
+              <option>Sztratégosz</option>
+              <option>Tagosz</option>
+              <option>Türannisz</option>
+            </select>
+          </div>
+          <div class="flex flex-col items-center w-[90%]">
+            <label for="" class="self-start text-gray-500">Mikor élt?</label>
+            <input type="date" name="mikor" />
+          </div>
+          <button
+            type="submit"
+            class="bg-black text-white p-3 m-4 w-[70%] rounded-2xl"
+          >
+            Keresés
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

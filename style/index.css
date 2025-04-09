@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-background: #e1d7c6;
+  --color-text: #295f98;
+  --color-primary: #295f98;
+  --color-section: #d39d55;
+  --color-link: #e55604;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-cinzel: "Cinzel", sans-serif;
+}
+
+.underlinehover {
+  position: relative;
+  z-index: 1;
+  transition: 200ms ease;
+  @apply m-3;
+}
+
+.header-hover {
+  transition: 200ms ease;
+}
+
+.header-hover:hover {
+  @apply scale-[1.1] font-bold;
+}
+
+.underlinehover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 200ms ease;
+  z-index: -1;
+  @apply border border-2 border-transparent;
+}
+
+.underlinehover:hover::before {
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0, 10px, 10px, rgb(0, 0, 0, 1));
+}
+
+.greece-content h2 {
+  transition: 300ms ease;
+}
+.greece-content:hover h2 {
+  @apply tracking-[0.25rem] font-bold;
+}
+
+.footer-content {
+  position: relative;
+  transition: 200ms ease;
+}
+
+.footer-content::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  translate: -50% 0;
+  height: 5px;
+  width: 0;
+  transition: 200ms ease;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.footer-content:hover::after {
+  width: 100%;
+}
+.footer-content:hover {
+  font-weight: bold;
+  letter-spacing: 0.24rem;
+}
+
+.will-change-transform {
+  will-change: transform;
+  transform: perspective(1000px) translateZ(0);
+  backface-visibility: hidden;
+  contain: layout paint style;
+}
+
+.item {
+  transition: 200ms ease;
+}
+
+.item:hover {
+  scale: 1.1
+}
